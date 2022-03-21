@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 import PackageDescription
 let package = Package(
     name: "ZendeskSupportSDK",
@@ -15,11 +15,11 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "ZendeskSupportProvidersSDK",
-                 url: "https://github.com/zendesk/support_providers_sdk_ios",
-                 .exact("5.4.0")),
+                 url: "https://github.com/RBNA/support_providers_sdk_ios",
+                 branch: "master"),
         .package(name: "ZendeskMessagingSDK",
-                 url: "https://github.com/zendesk/messaging_sdk_ios",
-                 .exact("3.8.3"))
+                 url: "https://github.com/RBNA/messaging_sdk_ios",
+                 branch: "master")
     ],
     targets: [
         .binaryTarget(
